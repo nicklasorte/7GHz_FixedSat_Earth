@@ -99,17 +99,41 @@ cell_fix_sat_earth_data
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Simulation Input Parameters to change
+% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % rev=1000; %%%%%%Fix Sat Coordination Example:
+% % sim_radius_km=200; %%%%%%%%Placeholder distance --> Simplification: This is an automated calculation, but requires additional processing time.
+% % grid_spacing=30;  %%%%km:
+% % bs_eirp=85; %%%%%EIRP [dBm/100MHz] 65dBm/1MHz --> 75dBm/10Mhz --> 85dBm/100Mhz
+% % bs_height=30; %%%%%Height in m
+% % array_mitigation=0:10:60;  %%%%%%%%% in dB
+% % %%loc_idx1=find(contains(cell_fix_sat_earth_data(:,2),'FT BELVOIR'));
+% % cell_locations=cell_fix_sat_earth_data;%%([loc_idx1],:)
+% % tf_calc_rx_angle=0;  %%%%%%0 assumes everything is coming in at the sidelobe.
+% % sim_folder1=folder1
+% % % % % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% rev=1001; %%%%%%Fix Sat Coordination Example:
+% sim_radius_km=100; %%%%%%%%Placeholder distance --> Simplification: This is an automated calculation, but requires additional processing time.
+% grid_spacing=5;  %%%%km:
+% bs_eirp=85; %%%%%EIRP [dBm/100MHz] 65dBm/1MHz --> 75dBm/10Mhz --> 85dBm/100Mhz
+% bs_height=30; %%%%%Height in m
+% array_mitigation=0%:10:60;  %%%%%%%%% in dB
+% %%loc_idx1=find(contains(cell_fix_sat_earth_data(:,2),'FT BELVOIR'));
+% cell_locations=cell_fix_sat_earth_data;%%([loc_idx1],:)
+% tf_calc_rx_angle=0;  %%%%%%0 assumes everything is coming in at the sidelobe.
+% sim_folder1=folder1
+% % % % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-rev=1000; %%%%%%Fix Sate Coordination Example:
+rev=1002; %%%%%%Fix Sat Coordination Example:
 sim_radius_km=200; %%%%%%%%Placeholder distance --> Simplification: This is an automated calculation, but requires additional processing time.
-grid_spacing=30;  %%%%km:
+grid_spacing=1;  %%%%km:
 bs_eirp=85; %%%%%EIRP [dBm/100MHz] 65dBm/1MHz --> 75dBm/10Mhz --> 85dBm/100Mhz
 bs_height=30; %%%%%Height in m
 array_mitigation=0:10:60;  %%%%%%%%% in dB
 %%loc_idx1=find(contains(cell_fix_sat_earth_data(:,2),'FT BELVOIR'));
 cell_locations=cell_fix_sat_earth_data;%%([loc_idx1],:)
 tf_calc_rx_angle=0;  %%%%%%0 assumes everything is coming in at the sidelobe.
-sim_folder1=folder1
+sim_folder1='Z:\MATLAB\7GHz Fixed Sat' %%folder1
 % % % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 

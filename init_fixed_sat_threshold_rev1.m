@@ -96,6 +96,12 @@ end
 
 cell_fix_sat_earth_data
 
+table_fix_sat=cell2table(cell_fix_sat_earth_data(:,[1,2,3,4,10]));
+table_fix_sat.Properties.VariableNames={'Agency' 'City' 'State' 'System' 'Threshold'}
+writetable(table_fix_sat,strcat('FixSat_Threshold.xlsx'));
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Simulation Input Parameters to change
@@ -218,7 +224,6 @@ tempfolder=strcat('Rev',num2str(rev));
 rev_folder=fullfile(sim_folder1,tempfolder);
 cd(rev_folder)
 pause(0.1)
-
 
 tic;
 save('reliability.mat','reliability')

@@ -51,6 +51,7 @@ temp_col_idx=find(matches(cell_fix_sat_earth(1,:),'Rx_Noise_Temp_Kelvin'));
 generic_rx_nf=1.5;
 generic_rx_bandwidth_mhz=100;
 generic_temp_kelvin=125;
+fix_sat_rx_height_m=3; %%%%%%%%%%3 meters is a placeholder.
 
 %%%%%%%%%%%Calculate the threshold:
 in_ratio=-6; %%%%%I/N Ratio -6dB
@@ -143,8 +144,10 @@ for i=1:1:num_sites
     cell_sim_data{i,1}=erase(temp_city," ");
 
     %%%%%%%%%Lat/Lon to a single cell
-     cell_sim_data{i,2}=cell2mat(cell_locations(i,[5,6]));
-     cell_sim_data{i,3}=cell_sim_data{i,2};
+    temp_latlon=cell2mat(cell_locations(i,[5,6]));
+    temp_latlon(:,3)=fix_sat_rx_height_m;
+    cell_sim_data{i,2}=temp_latlon;
+    cell_sim_data{i,3}=temp_latlon;
 
 end
 

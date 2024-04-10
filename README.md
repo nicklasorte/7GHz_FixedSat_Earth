@@ -7,7 +7,7 @@ Run: https://github.com/nicklasorte/itm_matlab_example
 
 Then download the files from this repository.
 
-Run: https://github.com/nicklasorte/7GHz_FixedSat_Earth/blob/main/init_fixed_sat_threshold_rev1.m
+Run: https://github.com/nicklasorte/7GHz_FixedSat_Earth/blob/main/init_fixed_sat_threshold_rev2_no_z_drive.m
 
 You'll need to also download:
 
